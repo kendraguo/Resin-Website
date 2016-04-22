@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> RESIN web page </title>
+<link href='https://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="resin.css">
+
+</head>
+<body>
+
+<div class ="contains">
+<div class ="head">
+
+<h4>Resin <h4>
+</div><!--head><-->
+
+<div class ="nav">
+
+<h5> navigation </h5>
+
+<ul>
+<li> <a href="index.html"> Home Page</a>  </li>
+<li> <a href="register.html"> Register </a> </li>
+<li> <a href="products.html"> Products </a> </li>
+<li> <a href="orderforms.html"> Order Forms </a> </li>
+<li> <a href="target.html"> Our Target </a> </li>
+<li> <a href="diy.html"> How To/ DIY </a> </li>
+<li> <a href="staff.html"> Staff</a> </li>
+<li> <a href="history.html"> History </a> </li>
+<li> <a href="javascript.html"> Javascript </a> </li>
+<li> <a href="javascriptValidator.html"> Javascript Validator </a> </li>
+<li> <a href="jQuery.html"> jQuery </a> </li>
+<li> <a href="usefullinks.html"> Useful Links </a> </li>
+<ul>
+
+
+</div><!--nav><-->
+<div class ="chunk">
+<a name = "Go to Top"> </a> 
+<h1>Register</h1>
+
+<form action="thankyou.html">
+<p>INFORMATION <br> </p>
+<fieldset>
+    <legend>Personal information:</legend>
+	First name: <br> <input type="text" name="FirstName" placeholder="First Name"><br><br>
+	Last Name: <br> <input type="text" name="lname" placeholder="Last Name"> <br><br>
+	Address: <br> <input type="text" name="address" placeholder="Address"> <br><br>
+	5 digit Zip Code: <br> <input type="text" name="zip" placeholder="XXXXX"> <br><br>
+</fieldset>	
+	<p class="dropdown">
+Select State:
+<input list="states" name="states">
+  <datalist id="states">
+  <option value="Select State" name ="select">Select State</option>
+  <option value="NY" name ="NY">NY</option>
+  <option value="NJ" name ="NJ">NJ</option>
+  <option value="CT" name ="CT">CT</option>
+  <option value="MD" name ="MD">MD</option>
+  </datalist>
+</select>
+
+	</p class="dropdown">
+<p class="radio">
+Select Age: <br>
+  <input type="radio" name="age" value="90plus"> 90 and Up
+  <br>
+  <input type="radio" name="age" value="60to89"> 60 to 89
+  <br>
+  <input type="radio" name="age" value="20to59" checked> 20 to 59
+  <br>
+  <input type="radio" name="age" value="toddlerto19"> Child to 19
+ 
+</p class="radio">
+
+<br><br>
+<form action="thankyou.html">                  <!--number creates up and down button vs numeral just enters #s-->
+  Username: <input type="text" name="usrname" required>  &emsp; <br>
+   TELEPHONE: <input type="tel" name="phone" placeholder="Telephone #" maxlength="10" size="14" onKeyPress="return numbersonly(this, event)"> <br>
+  U.S. ZIP Code: <INPUT NAME="dollar" SIZE=5 MAXLENGTH=5 onKeyPress="return numbersonly(this, event)">  &emsp;&emsp;  
+  PIN: &emsp;<input type="numeral" name="pin" placeholder="4 Digit Pin" maxlength="4" size="8" onKeyPress="return numbersonly(this, event)"> <br>
+  Email: &emsp;<input type="text" name="email" size="30"> &emsp;  <br>
+
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit"> 
+</form>
+
+<p class="required" style="color:red" ><strong>Note:</strong> Username is required.</p>
+
+
+
+
+</div><!--chunk><-->
+
+<div class ="foot">
+
+<p class ="pagetop"> <a href= "#Go to Top"> Go to Top </a> </p class ="pagetop">
+<p> &copy 2015 copyright ResinWorld Inc, NLC </p>
+
+</div><!--foot><-->
+</div><!--contains><-->
+
+
+
+
+</body>
+</html>

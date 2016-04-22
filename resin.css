@@ -1,0 +1,327 @@
+<style>
+a:link		{    color: blue;}
+a:visited 	{    color: brown;}
+a:hover 		{    color: red;}
+a:active 	{    color: purple;}
+
+
+.contains 	{width:80%;
+			height:500px;
+			background-color:#fff;
+			border-radius: 25px 25px 0 0;			
+			margin: 0 auto;}
+			
+.head 		{width:100%;
+			height:100px;
+			background-color:#f9b8d2;
+			border-radius: 25px 25px 0 0;}
+			
+.nav		{float:left;
+			width:20%;
+			height:1100px;
+			background-color:#fbf68d;
+			margin-top: 0px;}
+
+.chunk		{float:right;
+			width:80%;
+			height:1100px;
+			background-color:#ccf8ff;
+			}	
+
+.foot	       {clear:both;
+			width:100%;
+			height:100px;
+			background-color:#ffd3cc;			
+			font-weight:bold;
+			font-family:helvetica;
+			margin-top: 10px;
+			border-radius: 0 0 25px 25px;}
+			
+
+			
+p.slogan	{font-size:22px;
+			font-family:Informal Roman;
+			font-weight:bold;
+			padding: 0 5px;
+			color:#ff9180;
+
+			}			
+p.pagetop	{font-size:19px;
+			font-family:Informal Roman;
+			text-align:right;
+			padding: 0 20px;
+			}	
+p.history	{font-size:14px;
+			text-align:left;
+			margin:10 20px;
+			padding: 5px;
+			text-shadow: 1px 1px 3px #987ca7;			
+			}
+p.dropdown	{font-size:14px;
+			text-align:center;
+			margin:10 20px;
+			color:#ffbf4d;
+			}	
+p.radio		{font-size:14px;
+			text-align:left;
+			margin:10 20px;
+			color:#82afff;
+			padding:10px;			
+			}
+p.description	{
+				color:#703690;
+				text-align:left;
+				margin:0 10px;
+				font-size:14px;
+				font-family: Segoe Script, cursive;
+				}			
+
+h1			{font-family: 'Gravitas One', cursive;	
+			font-size:20px;
+			text-align:center;
+			color:#fff;
+			}
+
+ul 			{list-style-type: none;}
+ul li:hover 			{ padding-left:15px;}			 
+			
+iframe		{width:50%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}
+			
+img.world	{width :30%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: 10px;
+			}
+
+img.jellyfish {width :30%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: 30px;
+			}
+
+img.sphereMold {width :30%;
+			height:20%;
+			display: block;
+			margin-left: auto;
+			margin-right: 20px;
+			margin-top:3px;
+			}	
+img.beautyflor {width :45%;
+			height:20%;
+			display: block;
+			margin-left: auto;
+			margin-right: 20px;
+			margin-top:3px;
+			}		
+img.goldfish {width :30%;
+			height:20%;
+			display: block;
+			margin-left: auto;
+			margin-right: 20px;
+			margin-top:3px;
+			}
+img.resinsphere {width :35%;
+			height:15%;
+			display: block;
+			margin-left: 15px;
+			margin-right: 8px;
+			margin-top:3px;
+			}	
+img.iceresin {width :45%;
+			height:20%;
+			display: block;
+			margin-left: auto;
+			margin-right: 20px;
+			margin-top:3px;
+			}			
+img.resinHowTo	{width :45%;
+				height:default;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				}		
+img.seal		{width :25%;
+				height:20%;
+				display: block;
+				margin-left: auto;
+				margin-right: 10px;
+				}	
+img.earrings	{width :30%;
+				height:20%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				}				
+img.woodstock	{width :100%;
+				height:20%;
+				padding: 50px 500px 0px 1px;
+				}			
+img.pikachu_profile {width :45%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}
+img.mickymouse {width :45%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}		
+img.homer 	{width :45%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}	
+img.tweety 	{width :45%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}		
+img.patrick_star {width :45%;
+			height:default;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}						
+
+h3	{font-size:24px;
+	text-align:left;
+	color:#987ca7;
+	margin-left:5px;
+	font-family: 'Dancing Script';}	
+
+h4	{font-size:60px;
+	text-align:center;
+	color:#987ca7;
+	font-family: 'Lobster', cursive;}	
+	
+h5	{font-size:18px;
+	text-align:center;
+	color:#000000;
+	font-family: 'Gravitas One', cursive;}	
+
+p	{text-align:center;
+	font-size:18px;
+	padding-top:8px;
+	color:#fff;
+	font-family: 'Handlee', cursive;
+	}
+
+table		{ width:80%;
+			padding:auto;}
+	
+table,td,th	{margin-left: auto;
+			margin-right: auto;	
+			border :1px solid black;
+			padding:5px;
+			}
+form {display: block;
+	padding:5px;
+	} 
+dt {margin-left: 10px;}	
+.noterequired {color:#74cc47;
+			text-align:left;
+			}
+			
+.title	{width:20%;
+		text-align:center;
+		}
+.name	{width:20%;
+		text-align:center;
+		}
+.experience	{width:45%;
+		text-align:left;
+		}
+.photo	{width:20%;
+		}
+		
+.year	{width:5%;
+		text-align:center;
+		}
+.event	{width:40%;
+		}
+	
+	@media screen and (max-width: 900px) { /*tablet*/
+/*.chunk	{overflow-x:scroll;    /* adds in scroll but not just vertical but horizontal
+		}  */
+.contains 	{width:95%;}
+.head		{height:50px}
+        h4	{font-size:30px;}
+		h5	{font-size:11px;}
+		ul 	{margin:1em;
+			 padding:1px;}
+		p	{font-size:16px;}
+		h3	{font-size:20px;
+			margin-left:6px;}			
+		h1	{font-size:18px;}			
+			
+p.history	{font-size:13px;
+			margin:8 10px;
+			}	
+img.sphereMold 	{
+				width :20%;
+			height:8%;
+			display: block;
+			margin-left: auto;
+			margin-right: 20px;
+				}
+img.seal		{width :20%;
+				height:8%;
+				}	
+img.earrings	{width :20%;
+				height:8%;
+				}				
+	}
+	
+		@media screen and (max-width: 500px) { /*cell phone*/
+.contains 	{width:100%;}
+.head		{height:35px;}
+.chunk,.nav {height:default;} 
+.order	{font-size:10px;}
+ 
+        h4	{font-size:23px; padding: 0 2px; margin-top:1px;}    /*The margin-top:1px; gets rid of white space above idk why*/
+		h5	{font-size:6px; margin:5px;}
+		ul	{font-size:7px;
+			margin:1em;
+			width: 10em;}
+		p	{font-size:14px;}
+		h3	{font-size:18px;}		
+		h1	{font-size:15px;}			
+		
+table,td,th	{font-size:10px; padding:auto;}
+
+input, select { display: inline-table;}
+
+p.history	{font-size:10px;
+			margin:5 5px;}
+			
+p.description	{font-size:10px;
+				margin-left:5px;}
+p.slogan	{font-size:18px;}
+img.world	{width :30%;
+			margin-left: 4px;}	
+			
+img.sphereMold 	{width :20%;
+				height:6%;
+				display: block;
+				margin-left: auto;
+				margin-right: 20px;
+				}
+iframe		{width:50%;
+			height:auto;}					
+		
+	}
+
+
+	
+	
+</style>

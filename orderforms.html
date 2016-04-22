@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> RESIN web page </title>
+<link href='https://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="resin.css">
+
+<SCRIPT TYPE="text/javascript">
+<!--  http://www.htmlcodetutorial.com/forms/index_famsupp_158.html
+// copyright 1999 Idocs, Inc. http://www.idocs.com
+// Distribute this script freely but keep this notice in place
+function numbersonly(myfield, e, dec)
+{
+var key;
+var keychar;
+
+if (window.event)
+   key = window.event.keyCode;
+else if (e)
+   key = e.which;
+else
+   return true;
+keychar = String.fromCharCode(key);
+
+// control keys
+if ((key==null) || (key==0) || (key==8) || 
+    (key==9) || (key==13) || (key==27) )
+   return true;
+
+// numbers
+else if ((("0123456789").indexOf(keychar) > -1))
+   return true;
+
+// decimal point jump
+else if (dec && (keychar == "."))
+   {
+   myfield.form.elements[dec].focus();
+   return false;
+   }
+else
+   return false;
+}
+
+//-->
+</SCRIPT>
+
+</head>
+<body>
+
+<div class ="contains">
+<div class ="head">
+
+<h4>Resin </h4>
+</div><!--head><-->
+
+<div class ="nav">
+
+<h5> navigation </h5>
+
+<ul>
+<li> <a href="index.html"> Home Page</a>  </li>
+<li> <a href="register.html"> Register </a> </li>
+<li> <a href="products.html"> Products </a> </li>
+<li> <a href="orderforms.html"> Order Forms </a> </li>
+<li> <a href="target.html"> Our Target </a> </li>
+<li> <a href="diy.html"> How To/ DIY </a> </li>
+<li> <a href="staff.html"> Staff</a> </li>
+<li> <a href="history.html"> History </a> </li>
+<li> <a href="javascript.html"> Javascript </a> </li>
+<li> <a href="javascriptValidator.html"> Javascript Validator </a> </li>
+<li> <a href="jQuery.html"> jQuery </a> </li>
+<li> <a href="usefullinks.html"> Useful Links </a> </li>
+<ul>
+
+
+</div><!--nav><-->
+<div class ="chunk">
+<a name = "Go to Top"> </a> 
+<h1>Orders</h1>
+<table border ="1">
+<tr><th colspan="5">Order Info</th><tr>
+<tr><th>Products Type</th><th>Product</th><th> Size </th><th>Cost: </th><th class = "order"> Order QTY: </th> </tr>
+<tr><td rowspan="2">Pieces</td><td>Sphere</td><td> 100 </td><td> $10 </td><td><input type="numeral" name="OrderQTY" required maxlength="3" size="1"> </td> </tr>
+<tr><td>Frame</td><td> 500 </td><td>20$ </td><td> <input type="numeral" name="OrderQTY" required maxlength="3" size="1"> </td></tr>
+
+<tr><td rowspan="3">DIY Kits</td><td>Earring kit</td><td> 10oz. </td><td>$10 </td><td> <input type="numeral" name="OrderQTY" required maxlength="3" size="1"> </td> </tr>
+<tr><td>Bracelet Kit</td><td> 15oz. </td><td>$20 </td><td> <input type="numeral" name="OrderQTY" required maxlength="3" size="1"> </td> </tr>
+<tr><td> Necklace Kit</td><td> 20oz. </td><td> $20 </td><td> <input type="numeral" name="OrderQTY" required maxlength="3" size="1"> </td> </tr>
+</table>
+
+&emsp;&emsp;&emsp;
+<input type="button" onclick="alert('Submission complete after you click submit or go and have entered all info!')" value="Click Me!">
+
+<br><br>
+<form action="thankyou.html">                  <!--number creates up and down button vs numeral just enters #s-->
+  Username: <input type="text" name="usrname" required>  &emsp;
+  PIN: <input type="numeral" name="pin" placeholder="4 Digit Pin" maxlength="4" size="8" onKeyPress="return numbersonly(this, event)"> <br>
+  Email: <input type="text" name="email" size="25"> &emsp;  <br>
+  U.S. ZIP Code: <INPUT NAME="dollar" SIZE=5 MAXLENGTH=5 onKeyPress="return numbersonly(this, event)"> 
+   TELEPHONE: <input type="tel" name="phone" placeholder="telephone #" maxlength="10" size="14" onKeyPress="return numbersonly(this, event)"> <br></br>
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit"> <br></br>
+ &emsp;<button type="reset" value="Reset">Reset</button>
+</form>
+
+<p class="noterequired" style="color:red" ><strong>Note:</strong> Username is required. Reset is clears all boxes. Please fill out all boxes before submission.</p>
+
+
+</table>
+
+</div><!--chunk><-->
+
+<div class ="foot">
+
+<p class ="pagetop"> <a href= "#Go to Top"> Go to Top </a> </p class ="pagetop">
+<p> &copy 2015 copyright ResinWorld Inc, NLC </p>
+
+</div><!--foot><-->
+</div><!--contains><-->
+
+
+
+
+</body>
+</html>

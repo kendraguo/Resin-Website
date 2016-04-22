@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> RESIN web page </title>
+<link href='https://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="resin.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+<!--For Mozilla Doesnt Work-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC"crossorigin="anonymous"></script>
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+// Put all JQuery here::::
+
+//
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+//	double clicks needed
+    $("#test2").dblclick(function(){
+        $("#test2").hide();
+    });
+//
+    $("span").mouseenter(function(){
+        $(this).hide();
+    });	
+//
+    $("#fadeToggle").click(function(){
+        $("#div4").fadeToggle();
+        $("#div5").fadeToggle("slow");
+        $("#div6").fadeToggle(3000);
+    });
+//
+    $("#keyhide").keypress(function(){
+        $(this).hide();
+    });
+	
+//before this is the Jquery	
+});
+</script>
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #F6CADA;
+    border: solid 1px #9DDB81;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class ="contains">
+<div class ="head">
+
+<h4>Resin <h4>
+</div><!--head><-->
+
+<div class ="nav">
+
+<h5> navigation </h5>
+
+<ul>
+<li> <a href="index.html"> Home Page</a>  </li>
+<li> <a href="register.html"> Register </a> </li>
+<li> <a href="products.html"> Products </a> </li>
+<li> <a href="orderforms.html"> Order Forms </a> </li>
+<li> <a href="target.html"> Our Target </a> </li>
+<li> <a href="diy.html"> How To/ DIY </a> </li>
+<li> <a href="staff.html"> Staff</a> </li>
+<li> <a href="history.html"> History </a> </li>
+<li> <a href="javascript.html"> Javascript </a> </li>
+<li> <a href="javascriptValidator.html"> Javascript Validator </a> </li>
+<li> <a href="jQuery.html"> jQuery </a> </li>
+<li> <a href="usefullinks.html"> Useful Links </a> </li>
+<ul>
+
+
+</div><!--nav><-->
+<div class ="chunk">
+<a name = "Go to Top"> </a> 
+<h1>jQuery</h1>
+
+ <br>
+
+
+<div id="flip">Click to slide the panel down or up & Make sure popups are allowed!</div>
+<div id="panel">Hello RESIN world!</div>
+</br> 
+<hr/> 
+<p id="test2">If you double-click on me, I will disappear.</p id="test2">
+</br>
+<span style="margin-left:10px;">If you mouse over me, I will disappear.</span><br>
+<span style="margin-left:10px;">If you mouse over me, I will disappear.</span>
+<hr/></br>
+
+<button id="fadeToggle" style="margin-left:10px;">Click to fade in/out boxes</button><br><br>
+
+<div id="div4" style="width:80px;height:80px;background-color:red; margin-left:10px;" ></div>
+<br>
+<div id="div5" style="width:80px;height:80px;background-color:green; margin-left:10px;"></div>
+<br>
+<div id="div6" style="width:80px;height:80px;background-color:blue; margin-left:10px;"></div>
+<hr/>
+
+<input id="keyhide" style="margin-left:10px;" type="text" value="Press any key inside me to hide me" size="40"> 
+<br> &emsp;
+
+
+</div><!--chunk><-->
+
+<div class ="foot">
+
+<p class ="pagetop"> <a href= "#Go to Top"> Go to Top </a> </p class ="pagetop">
+<p> &copy 2015 copyright ResinWorld Inc, NLC </p>
+
+</div><!--foot><-->
+</div><!--contains><-->
+
+
+
+
+</body>
+</html>
